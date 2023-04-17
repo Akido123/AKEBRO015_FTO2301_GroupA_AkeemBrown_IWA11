@@ -2,7 +2,7 @@
 
 const root1 = document.querySelector("[data-key=order1]")
 const biscuits1 = root1.querySelector(".biscuits .count")
-const donuts1 = root1.querySelector(".donuts .count")
+const tdonuts1 = root1.querySelector(".donuts .count")
 const pancakes1 = root1.querySelector(".pancakes .count")
 const status1 = root1.querySelector(".status dd")
 
@@ -21,14 +21,14 @@ const status3 = root3.querySelector(".status dd")
 biscuits1.innerHTML = root1.dataset.biscuits
 donuts1.innerHTML = root1.dataset.donuts
 pancakes1.innerHTML = root1.dataset.pancakes
-// status1.innerHTML = root1.dataset.delivered  == true ? Delivered : Pending
+status1.innerHTML = root1.dataset.delivered == "true" ? "Delivered" : "Pending"
 
 biscuits2.innerHTML = root2.dataset.biscuits
 donuts2.innerHTML  = root2.dataset.donuts
 pancakes2.innerHTML = root2.dataset.pancakes
-// status2.innerHTML = root2.dataset.delivered ? Delivered : Pending
+status2.innerHTML = root2.dataset.delivered == "true" ? "Delivered" : "Pending"
 
 biscuits3.innerHTML = root3.dataset.biscuits
 donuts3.innerHTML = root3.dataset.donuts
 pancakes3.innerHTML = root3.dataset.pancakes
-// status3.innerHTML = root3.dataset.delivered ? Delivered : Pending
+status3.innerHTML = root3.dataset.delivered == "true" ? "Delivered" : "Pending"
